@@ -1,0 +1,62 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+ul#project-list {
+	list-style-type: none;
+	padding: 0px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+ul#project-list > li {
+	border: 1px dotted #888;
+	background-color: #ececec;
+	width: 25rem;
+	border-radius: 0.5rem;
+}
+
+ul#project-list > li, ul#project-list > li * {
+	cursor: pointer;
+}
+
+ul#project-list > li > a,
+ul#project-list > li > a:visited,
+ul#project-list > li > a:active {
+	display: block;
+	height: 100%;
+	padding: 1.5rem;
+	text-decoration: none;
+	color: #333;
+	border-radius: 0.5rem;
+}
+
+ul#project-list > li > a:hover {
+	background-color: #efda4f;
+}
+
+ul#project-list > li > a > h3 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+ul#project-list .description {
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+ul#project-list .link {
+	text-decoration: underline;
+	text-align: right;
+}
+
+/* github corner badge */
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
